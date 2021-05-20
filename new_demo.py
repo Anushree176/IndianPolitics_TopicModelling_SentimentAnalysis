@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 import gensim
 from gensim import corpora
 
-df = pd.read_csv('Speeches_with_topics.csv', converters={'Tokens': eval})
+df = pd.read_csv('Datasets/Speeches_with_topics.csv', converters={'Tokens': eval})
 result = df['Tokens'][0]
 
 new_dictionary = corpora.Dictionary(result)
